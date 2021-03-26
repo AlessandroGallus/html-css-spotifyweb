@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    z-index: 0;
+}
+.ag-middle{
+    display: flex;
+    position: relative;
+    margin-top: 70px;
+}
+.ag-container{
+    position: relative;
+}
+footer{
+    height: 70px;
+    background-color: pink;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index: 2;
+}
+.ag-nav{
+    display: inline-block;
+    width:100px;
+    position:fixed;
+    left:0;
+    top:70px;
+    height: calc( 100vh - 140px );
+    background-color: green;
+}
+.ag-clearifx{
+    content:"";
+    display: table;
+    clear:both;
+}
+.ag-music{
+    width: calc(100% - 100px);
+    display: inline-block;
+    background-color: yellow;
+    min-height: 100px;
+    margin-left: 100px;
+}
+.ag-top{
+    height:70px;
+    width: 100%;
+    position: fixed;
+    background-color: red;
+    top:0;
+    z-index:1;
+}
