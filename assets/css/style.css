@@ -37,8 +37,7 @@ footer{
 }
 .ag-playlist-list{
     overflow: auto;
-    max-height: 230px;
-}
+  }
 .ag-playlist{
     padding-left: 10px;
 }
@@ -119,6 +118,13 @@ footer{
     background-color: grey;
     margin-top:20px;
     margin-bottom:20px;
+}
+.ag-logo-xs{
+    height:90px;
+}
+.ag-logo-xs img{
+width:50px;
+margin-left:10px;
 }
 .ag-logo-s{
     display: inline-block;
@@ -201,8 +207,18 @@ footer{
     font-weight: bold;
     font-size:16px;
 }
+
+
+
+footer{
+
+    display:flex;
+
+}
+
 .ag-current-song{
-    width:230px;
+    order:1;
+    min-width:230px;
     height:100%;
     display: flex;
     flex-wrap: wrap;
@@ -222,7 +238,6 @@ footer{
 }
 .ag-column{
     order:2;
-    width:110;
     height:100%;
 }
 .ag-song-title{
@@ -252,4 +267,43 @@ footer{
 .ag-current-song i{
     font-size: 18px;
     padding-top:36px;
+}
+
+.ag-player{
+width: calc(100% - 460px);
+min-width: 400px;
+height:100%;
+order:2;
+}
+.ag-settings{
+    width:230px;
+    height:100%;
+    order:3;
+}
+.ag-backline{
+    margin-top:20px;
+    width:140px;
+    height:1px;
+    border: 2px solid #5A5A5A;
+    border-radius: 2px;
+}
+.ag-frontline{
+    display: flex;
+    width:40px;
+    height:0px;
+    border: 2px solid #C1C1C1;
+    border-radius: 2px;
+    transform: translate(-2px, -2px);
+    justify-content: flex-end;
+}
+.ag-ball{
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(+7px, -7px);
+    display: none;
+}
+.ag-frontline:hover .ag-ball,.ag-backline:hover .ag-ball{
+    display:block;
 }

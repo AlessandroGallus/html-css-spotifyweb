@@ -53,8 +53,12 @@ height: calc(80vw / 4);
 height: calc(85vw / 6);
 }
 }
-@media all and (max-height:630px)
+@media all and (max-height:700px)
 {
+  .ag-playlist-list{
+    overflow: auto;
+    max-height: 210px;
+  }
   .ag-account-download{
     display: none;
   }
