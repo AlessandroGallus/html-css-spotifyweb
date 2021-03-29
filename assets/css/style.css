@@ -10,14 +10,14 @@ body{
 .ag-middle{
     display: flex;
     position: relative;
-    margin-top: 70px;
+    margin-top: 90px;
 }
 .ag-container{
     position: relative;
 }
 footer{
-    height: 70px;
-    background-color: pink;
+    height: 90px;
+    background-color: #282828;
     position: fixed;
     bottom:0;
     width:100%;
@@ -25,11 +25,11 @@ footer{
 }
 .ag-nav{
     display: inline-block;
-    width:200px;
+    width:230px;
     position:fixed;
     left:0;
     top:0;
-    height: calc( 100vh - 70px );
+    height: calc( 100vh - 90px );
     background-color: black;
     z-index: 2;
     flex-direction: column;
@@ -37,10 +37,10 @@ footer{
 }
 .ag-playlist-list{
     overflow: auto;
-    max-height: 200px;
+    max-height: 230px;
 }
 .ag-playlist{
-    padding-left: 10px;ù
+    padding-left: 10px;
 }
 .ag-clearifx{
     content:"";
@@ -71,8 +71,8 @@ footer{
     display:inline-block;
     border:1px solid grey;
     height:40px;
-    margin-top:15px;
-    margin-right:35px;
+    margin-top:25px;
+    margin-right:45px;
     line-height: 10px;
     padding:15px;
     border-radius: 40px;
@@ -92,19 +92,19 @@ footer{
 }
 
 .ag-music{
-    width: calc(100vw - 200px);
+    width: calc(100vw - 230px);
     display: inline-block;
     background-color: yellow;
-    margin-left: 200px;
-    margin-bottom: 70px;
+    margin-left: 230px;
+    margin-bottom: 90px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
     min-height:100vh;
 }
 .ag-top{
-    height:70px;
-    width: calc(100% - 200px);
+    height:90px;
+    width: calc(100% - 230px);
     position: fixed;
     background-color: #080B12;
     top:0;
@@ -122,8 +122,8 @@ footer{
 }
 .ag-logo-s{
     display: inline-block;
-    height:70px;
-    line-height: 70px;
+    height:90px;
+    line-height: 90px;
 }
 .ag-logo{
     vertical-align: middle;
@@ -174,9 +174,6 @@ footer{
     width:180px;
     margin:auto;
 }
-.ag-account{
-    
-}
 .ag-account-download [class*=img]{
     background-position: center;
     background-size: contain;
@@ -203,4 +200,56 @@ footer{
 .ag-name{
     font-weight: bold;
     font-size:16px;
+}
+.ag-current-song{
+    width:230px;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    color:white;
+    font-size:12px;
+}
+.ag-song-img{
+    order:1;
+    height:100%;
+    margin-left:10px;
+    width:50px;
+    padding-top:20px
+}
+.ag-song-img img{
+    width:50px;
+ 
+}
+.ag-column{
+    order:2;
+    width:110;
+    height:100%;
+}
+.ag-song-title{
+    width:110px;
+    height:50%;
+    padding-left: 7px;
+    padding-top:25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ag-song-artist{
+    padding-top:5px;
+    padding-left: 7px;
+    width:110px;
+    height:50%
+}
+.ag-heart{
+    order:4;
+    height:100%;
+    width:30px;
+}
+.ag-folder{
+    order:5;
+    height:100%;
+    width:30px;
+}
+.ag-current-song i{
+    font-size: 18px;
+    padding-top:36px;
 }
