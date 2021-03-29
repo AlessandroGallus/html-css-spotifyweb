@@ -1,0 +1,61 @@
+@media all and (max-width:736px){
+  .ag-top{
+  width: calc(100% - 70px);
+}
+.ag-nav span, .ag-nav h3, .ag-nav .ag-new, .ag-playlist-list, .ag-nav .ag-line{
+  display: none;
+}
+.ag-music{
+  margin-left:60px;
+  width: calc(100% - 70px);
+}
+.ag-nav{
+  width:70px;
+}
+.ag-box{
+  width: calc(80vw / 2);
+  height: calc(80vw / 2);
+  min-width: 100px;
+}
+.ag-logo-s{
+  display:none;
+}
+.ag-logo-xs{
+  display: block;
+  
+}
+.ag-logo-xs img{
+  width:50;
+}
+}
+@media all and (min-width:736px){
+.ag-logo-s{
+  display: block;
+}
+.ag-logo-xs{
+  display:none;
+}
+.ag-box{
+  width: calc(80vw / 4);
+  height: calc(80vw / 4);
+  min-width: 100px;
+}
+}
+@media all and (min-width:980px){
+.ag-box{
+  width: calc(80vw / 4);
+height: calc(80vw / 4);
+}
+}
+@media all and (min-width:1280px){
+.ag-box{
+  width: calc(85vw / 6);
+height: calc(85vw / 6);
+}
+}
+@media all and (max-height:630px)
+{
+  .ag-account-download{
+    display: none;
+  }
+}
