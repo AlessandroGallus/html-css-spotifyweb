@@ -93,7 +93,7 @@ footer{
 .ag-music{
     width: calc(100vw - 230px);
     display: inline-block;
-    background-color: yellow;
+    background-color: #141922;
     margin-left: 230px;
     margin-bottom: 90px;
     display:flex;
@@ -274,36 +274,89 @@ width: calc(100% - 460px);
 min-width: 400px;
 height:100%;
 order:2;
+color:#D7D7D7;
 }
 .ag-settings{
     width:230px;
     height:100%;
     order:3;
+    color:#D7D7D7;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.ag-player-volume-line{
+    display: inline-block;
 }
 .ag-backline{
-    margin-top:20px;
-    width:140px;
+    margin:auto;
     height:1px;
     border: 2px solid #5A5A5A;
     border-radius: 2px;
 }
+.ag-settings .ag-backline{
+    width:100px;
+    margin:auto;
+    
+}
+.ag-player .ag-backline{
+    width:70%;
+}
 .ag-frontline{
     display: flex;
-    width:40px;
+    width:30%;
     height:0px;
     border: 2px solid #C1C1C1;
     border-radius: 2px;
     transform: translate(-2px, -2px);
     justify-content: flex-end;
+    align-items: center;
 }
+
 .ag-ball{
     width: 15px;
     height:15px;
     border-radius: 50%;
     background-color: white;
-    transform: translate(+7px, -7px);
     display: none;
+    transform: translate(+10px);
 }
 .ag-frontline:hover .ag-ball,.ag-backline:hover .ag-ball{
     display:block;
+}
+.ag-frontline:hover .ag-frontline, .ag-backline:hover .ag-frontline{
+    border:2px solid #ADFF2F;
+}
+.ag-bot-container{
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.ag-bot-container i{
+    margin-right: 10px;
+}
+.ag-wrap70{
+    width:70%;
+    height:100%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ag-row{
+    display: block;
+    width: 100%;
+    height:50%;
+}
+.ag-buttons{
+    padding-top: 20px;
+    font-size: 22px;
+}
+.ag-buttons i~i{
+    margin-left: 10px;
+}
+.ag-button-big{
+    font-size:32px
+}
+.ag-row-bot{
+    padding-top:10px;
 }
