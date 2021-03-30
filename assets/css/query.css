@@ -12,10 +12,20 @@
 .ag-nav{
   width:70px;
 }
+.ag-main-row{
+  justify-content: space-around;
+}
 .ag-box{
   width: calc(80vw / 2);
   height: calc(80vw / 2);
-  min-width: 100px;
+  min-width: 230px;
+  min-height: 230px;
+}
+.ag-box-title{
+  max-width: calc(80vw / 2);
+}
+.ag-row-title{
+  margin-left:2.5%;
 }
 .ag-logo-s{
   display:none;
@@ -36,22 +46,100 @@
   display:none;
 }
 .ag-box{
-  width: calc(80vw / 4);
-  height: calc(80vw / 4);
-  min-width: 100px;
+  width: calc(62vw / 4);
+  height: calc(62vw / 4);
+
+}
+.ag-box-title{
+  max-width:calc(62vw / 4);
+  margin:1%;
+}
+.ag-row-title{
+  margin-left:1%;
 }
 }
 @media all and (min-width:980px){
+  .ag-box{
+    width: calc(69vw / 4);
+    height: calc(69vw / 4);
+  }
+  .ag-box-title{
+    max-width:calc(69vw / 4);
+    margin:1.2%;
+  }
+  .ag-row-title{
+    margin-left:1.2%;
+  }
+  }
+@media all and (min-width:1010px){
 .ag-box{
-  width: calc(80vw / 4);
-height: calc(80vw / 4);
+  width: calc(71vw / 4);  
+  height: calc(71vw / 4);
 }
+.ag-box-title{
+  margin:1%;
+  max-width:calc(71vw / 4);
+}
+.ag-row-title{
+  margin-left:1%;
+}
+}
+@media all and (min-width:1185px){
+  .ag-box{
+    width: calc(69vw / 4);
+    height: calc(69vw / 4);
+  }
+  .ag-box-title{
+    margin:1.7%;
+    max-width: calc(69vw / 4);
+  }
+  .ag-row-title{
+    margin-left:1.7%;
+  }
 }
 @media all and (min-width:1280px){
 .ag-box{
-  width: calc(85vw / 6);
-height: calc(85vw / 6);
+  width: calc(71vw / 6);
+  height: calc(71vw / 6);
+  margin: 10px 0;
 }
+.ag-box-title{
+  margin:1.2%;
+  max-width: calc(71vw / 6);
+}
+.ag-row-title{
+  margin-left:1.2%;
+}
+}
+@media all and (min-width:1247px){
+  .ag-box{
+    width: calc(71vw / 6);    
+    height: calc(71vw / 6);
+    margin: 10px 0;
+  }
+  .ag-box-title{
+    margin:2%;
+    max-width: calc(71vw / 6);
+  }
+  .ag-row-title{
+    margin-left:2%;
+  }
+  }
+  
+@media all and (min-width:1500px){
+
+  .ag-box{
+    width: 160px;
+    height: 160px;
+    margin:1%;
+  }
+  .ag-box-title{
+    margin:2%;
+    max-width: 160px;
+  }
+  .ag-row-title{
+    margin-left:2%;;
+  }
 }
 @media all and (max-height:700px)
 {

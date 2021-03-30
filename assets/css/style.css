@@ -23,6 +23,32 @@ footer{
     width:100%;
     z-index: 3;
 }
+.ag-middle-navbar{
+    height:50px;
+    width: 100%;
+}
+.ag-nav-elements{
+    width:800px;
+    margin:auto;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    color:#5A5A5A;
+    align-items: center;
+    margin-top:15px;
+}
+.ag-element-active{
+    border-bottom: 2px solid #ADFF2F;
+    width:20px;
+    height: 1px;
+    margin:auto;
+    margin-top:5px;
+}
+.ag-nav-element{
+    padding-bottom: 10px;
+}
 .ag-nav{
     display: inline-block;
     width:230px;
@@ -89,17 +115,18 @@ footer{
     font-size:12px;
     margin:15px 0;
 }
-
+h2, h4{
+    color:white;
+}
+.ag-box-title p{
+    color:#77797F;
+}
 .ag-music{
     width: calc(100vw - 230px);
-    display: inline-block;
     background-color: #141922;
     margin-left: 230px;
     margin-bottom: 90px;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    min-height:100vh;
+    min-height: 100vh;
 }
 .ag-top{
     height:90px;
@@ -111,13 +138,29 @@ footer{
     z-index:2;
     display: flex;
     justify-content: flex-end;
-    color:white
+    color:white;
 }
-
+.ag-row-title{
+    width:100%;
+}
+.ag-main-row{
+    display:flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width:100%;
+    min-height:100px;
+    margin-bottom: 2%;
+    height: auto;
+}
 .ag-box{
     background-color: grey;
     margin-top:20px;
     margin-bottom:20px;
+    max-width: 220px;
+    max-height:220px;
+}
+.ag-box-title{
+    text-align: center;
 }
 .ag-logo-xs{
     height:90px;
@@ -342,7 +385,7 @@ color:#D7D7D7;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.ag-row{
+.ag-player-row{
     display: block;
     width: 100%;
     height:50%;
@@ -357,6 +400,6 @@ color:#D7D7D7;
 .ag-button-big{
     font-size:32px
 }
-.ag-row-bot{
+.ag-player-row-bot{
     padding-top:10px;
 }
