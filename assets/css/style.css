@@ -28,7 +28,7 @@ footer{
     width: 100%;
 }
 .ag-nav-elements{
-    width:800px;
+    width:60%;
     margin:auto;
     height: 100%;
     text-transform: uppercase;
@@ -42,7 +42,7 @@ footer{
 .ag-element-active{
     border-bottom: 2px solid #ADFF2F;
     width:20px;
-    height: 1px;
+    height:0;
     margin:auto;
     margin-top:5px;
 }
@@ -59,6 +59,13 @@ footer{
     background-color: black;
     z-index: 2;
     flex-direction: column;
+    color:white;
+}
+a{
+    color:#5A5A5A;
+    text-decoration: none;
+}
+a:hover{
     color:white;
 }
 .ag-playlist-list{
@@ -116,32 +123,34 @@ footer{
     margin:15px 0;
 }
 h2, h4{
+    width:100%;
     color:white;
 }
 .ag-box-title p{
     color:#77797F;
 }
 .ag-music{
-    width: calc(100vw - 230px);
+    width: calc( 100% - 230px);
     background-color: #141922;
     margin-left: 230px;
     margin-bottom: 90px;
     min-height: 100vh;
 }
+.ag-subtitle{
+    margin:10px 0;
+    color:#5A5A5A;
+    font-weight: bold;
+}
 .ag-top{
     height:90px;
-    width: calc(100% - 230px);
+    width: 100%;
     position: fixed;
     background-color: #080B12;
     top:0;
-    right:0;
     z-index:2;
     display: flex;
     justify-content: flex-end;
     color:white;
-}
-.ag-row-title{
-    width:100%;
 }
 .ag-main-row{
     display:flex;
@@ -254,7 +263,7 @@ margin-left:10px;
 
 
 footer{
-
+    width: 100%;
     display:flex;
 
 }
@@ -402,4 +411,69 @@ color:#D7D7D7;
 }
 .ag-player-row-bot{
     padding-top:10px;
+}
+/* caricamento immagini */
+[id*="ag-pl"]{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ag-pl-heavy-metal{
+background-image: url("../img/metal_lifting.jpg");
+
+}
+#ag-pl-stranger-things{
+    background-image: url("../img/stranger.jpeg");
+}
+#ag-pl-quiet{
+    background-image: url("../img/aquietplace.jpeg");
+}
+#ag-pl-split{
+    background-image: url("../img/split.jpeg");
+}
+.ag-box-title h4{
+    margin: 11px 0;
+}
+
+#ag-pl-cure{
+    background-image: url("../img/cure.jpeg");
+}
+#ag-pl-sinister{
+    background-image: url("../img/sinister.jpeg");
+}
+#ag-pl-radar{
+    background-image: url("../img/radar.jpeg");
+}
+#ag-pl-mix{
+    background-image: url("../img/mixdaily.jpeg");
+}
+#ag-pl-lana{
+    background-image: url("../img/youg.jpeg");
+    border-radius: 50%;
+}
+#ag-pl-einaudi{
+    background-image: url("../img/einaudi.jpeg");
+    border-radius: 50%;
+}
+/* caricamento immagini */
+
+.ag-play, .ag-play-circle{
+    display:none;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+    font-size: 4em;
+}
+.ag-box:hover .ag-play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ag-box:hover .ag-play-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }

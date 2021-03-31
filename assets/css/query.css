@@ -1,13 +1,13 @@
 @media all and (max-width:736px){
   .ag-top{
-  width: calc(100% - 70px);
+  width: 100%;
 }
 .ag-nav span, .ag-nav h3, .ag-nav .ag-new, .ag-playlist-list, .ag-nav .ag-line{
   display: none;
 }
 .ag-music{
-  margin-left:60px;
-  width: calc(100% - 70px);
+  margin-left:70px;
+  width: calc(100vw - 70px);
 }
 .ag-nav{
   width:70px;
@@ -69,6 +69,9 @@
   }
   .ag-row-title{
     margin-left:1.2%;
+  }
+  .ag-nav{
+    width:230px;
   }
   }
 @media all and (min-width:1010px){
